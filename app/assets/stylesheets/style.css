@@ -206,9 +206,11 @@ td { vertical-align: top; }
 
 
 
-.icon {
+img.iphone-no-retina {
   -webkit-border-radius: 10px;
-
+  -webkit-box-shadow:2px 2px 5px #333333;
+  width:90px;
+  height:90px;
 }
 
 
