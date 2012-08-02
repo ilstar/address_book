@@ -38,8 +38,9 @@ body.gray-color {
 
 div.popup {
   position: fixed;
-  left: 20px;
-  top: 20px;
+  margin: auto auto;
+  top: 30px;
   width:250px;
-  height:340px
+  min-height:250px;
+  padding-bottom: 10px;
 }
