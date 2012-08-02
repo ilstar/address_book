@@ -5,8 +5,6 @@ gem 'rails', '3.2.7'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
-
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -28,8 +26,7 @@ gem 'jquery-rails'
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
-# Use unicorn as the app server
-# gem 'unicorn'
+gem 'thin'
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -40,8 +37,14 @@ gem 'jquery-rails'
 gem 'rails-i18n', '0.6.1'
 
 group :test, :development do
+  gem 'mysql2'
+
   gem "rspec-rails", '>= 2.8.0'
   gem "factory_girl_rails", '3.0.0'
 
   gem 'debugger'
+end
+
+group :production do
+  gem 'pg'
 end
