@@ -1,0 +1,8 @@
+config/database.yml
+Thumbs.db
+.DS_Store
+log/*.log
+tmp/*
+coverage/*
+Session.vim
+*.swp
