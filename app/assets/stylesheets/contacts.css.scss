@@ -2,13 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#contacts {
+  text-align:center;
+}
+
 .contact {
   display: inline-block;
   width: 80px;
   height: 80px;
   position: relative;
   margin: 3px;
-  text-align:center;
 }
 
 span.name {
