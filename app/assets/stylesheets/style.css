@@ -208,9 +208,9 @@ td { vertical-align: top; }
 
 img.iphone-no-retina {
   -webkit-border-radius: 10px;
-  -webkit-box-shadow:2px 2px 5px #333333;
-  width:90px;
-  height:90px;
+  -webkit-box-shadow:2px 2px 5px #ffffff;
+  width:80px;
+  height:80px;
 }
 
 
