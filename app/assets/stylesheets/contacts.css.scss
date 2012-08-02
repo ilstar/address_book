@@ -4,19 +4,30 @@
 
 .contact {
   display: inline-block;
+  -webkit-border-radius: 10px;
+  -webkit-box-shadow:2px 2px 5px #333333;
   width: 80px;
   height: 80px;
   position: relative;
-  margin: 3px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  margin-left: 4px;
+  margin-right: 4px;
   text-align:center;
 }
 
 span.name {
   display: block;
   position: absolute;
+  -webkit-border-bottom-left-radius:10px 10px;
+  -webkit-border-bottom-right-radius:10px 10px;
   width: 100%;
   bottom: 0;
   line-height: 25px;
   text-align: center;
-  background: rgba(255, 255, 255, .2);
+  background: rgba(255, 255, 255, .4);
+}
+
+body.gray-color {
+  background-color: #25252E;
 }
