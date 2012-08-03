@@ -52,6 +52,22 @@ html {
   }
 }
 
+#container {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 320px;
+  height: 44px;
+  background-color:black;
+  background-image: url(/assets/header.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto 8px auto;
+}
+
 #contacts {
   text-align:center;
 }
