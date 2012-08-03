@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#contacts {
+  text-align:center;
+}
+
 .contact {
   display: inline-block;
   -webkit-border-radius: 10px;
@@ -30,4 +34,12 @@ span.name {
 
 body.gray-color {
   background-color: #25252E;
+}
+
+div.popup {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  width:250px;
+  height:340px
 }
