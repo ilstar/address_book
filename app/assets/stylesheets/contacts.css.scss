@@ -1,6 +1,15 @@
 // Place all the styles related to the contacts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+  background: black url(/assets/dark_Tire_@2X.png) left top repeat;
+  background-size: 250px 250px;
+
+  body {
+    background-color: transparent;
+    padding: 0;
+  }
+}
 
 .invisible {
   visibility: hidden;
@@ -71,10 +80,6 @@ span.name {
   line-height: 25px;
   text-align: center;
   background: rgba(255, 255, 255, .4);
-}
-
-body.gray-color {
-  background-color: #25252E;
 }
 
 div.popup {
