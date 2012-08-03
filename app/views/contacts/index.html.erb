@@ -1,9 +1,9 @@
   <div id="contacts">
     <% @contacts.each do |contact| %>
-    <span class="contact" data-avatar="<%= contact[:avatar] %>" data-name="<%= contact[:name] %>" data-phone="<%= contact[:phone] %>" data-desc="<%= contact[:desc] %>" style="background: url(<%= contact[:avatar] %>) no-repeat;">
+    <div class="contact" data-avatar="<%= contact[:avatar] %>" data-name="<%= contact[:name] %>" data-phone="<%= contact[:phone] %>" data-desc="<%= contact[:desc] %>" style="background-image: url(<%= contact[:avatar] %>);">
       <img class="iphone-no-retina" src="<%= contact[:avatar] %>"></img>
       <span class="name"><%= contact[:name] %></span>
-    </span>
+    </div>
   <% end %>
   </div>
 

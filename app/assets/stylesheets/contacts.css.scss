@@ -58,28 +58,22 @@ html {
 
 .contact {
   display: inline-block;
-  -webkit-border-radius: 10px;
-  -webkit-box-shadow:2px 2px 5px #333333;
-  width: 80px;
-  height: 80px;
+  -webkit-border-radius: 43px;
+  -webkit-box-shadow: 0 0 10px 4px rgba(255,255,255,0.3);;
+  width: 86px;
+  height: 86px;
+  -webkit-background-size: cover;
   position: relative;
-  margin-top: 8px;
-  margin-bottom: 4px;
-  margin-left: 4px;
-  margin-right: 4px;
-  text-align:center;
+  margin: 6px;
+  overflow: hidden;
+
+  img {
+    display: none;
+  }
 }
 
 span.name {
-  display: block;
-  position: absolute;
-  -webkit-border-bottom-left-radius:10px 10px;
-  -webkit-border-bottom-right-radius:10px 10px;
-  width: 100%;
-  bottom: 0;
-  line-height: 25px;
-  text-align: center;
-  background: rgba(255, 255, 255, .4);
+  display: none;
 }
 
 div.popup {
