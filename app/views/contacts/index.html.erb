@@ -1,9 +1,11 @@
-<div id="container">
-  <div id="main" role="main">
-    <div id="contacts">
-    </div>
+  <div id="contacts">
+    <% @contacts.each do |contact| %>
+    <span class="contact" data-avatar="<%= contact[:avatar] %>" data-name="<%= contact[:name] %>" data-phone="<%= contact[:phone] %>" data-desc="<%= contact[:desc] %>" style="background: url(<%= contact[:avatar] %>) no-repeat;">
+      <img class="iphone-no-retina" src="<%= contact[:avatar] %>"></img>
+      <span class="name"><%= contact[:name] %></span>
+    </span>
+  <% end %>
   </div>
-  <div id="contacts"></div>
 
   <div class="modal hide popup animated bounceIn" id="myModal">
     <div class="row-fluid">
@@ -21,5 +23,4 @@
     </div>
   </div>
 
-</div> <!--! end of #container -->
-
+<a class="btn" data-toggle="modal" href="#myModal" >Launch Modal</a>

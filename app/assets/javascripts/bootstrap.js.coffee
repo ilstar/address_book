@@ -1,7 +1,8 @@
+
 jQuery ->
 
-  $('.contact').on 'tap', ()->
+  $('.contact').on 'click', ()->
     alert '4234'
 
   $('.contact').on 'hold', ()->
-    alert 'hold'
+    $('#myModal').modal('show')
