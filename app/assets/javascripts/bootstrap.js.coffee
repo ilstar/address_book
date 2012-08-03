@@ -5,8 +5,10 @@ updateContactInfo = (contact) ->
   $("#modal-call").attr 'href', "tel:+#{contact.data 'phone'}"
   $("#modal-sms").attr 'href', "sms:+#{contact.data 'phone'}"
 
+initialize = ($)->
 
-jQuery ->
+  MBP.scaleFix();
+
   $body = $('body')
   # $body.on 'click', '.contact', (e) ->
   #   $('#myModal').modal('show')
@@ -20,3 +22,14 @@ jQuery ->
   $('span.contact').on 'hold', ->
     updateContactInfo $(this)
     $('#myModal').modal('show')
+
+  unveil = ->
+    console.log "unveil"
+    $('#container').removeClass 'invisible'
+    $('#startup-splash').hide()
+
+  setTimeout unveil, 2000
+
+  MBP.hideUrlBar();
+
+initialize(jQuery)
