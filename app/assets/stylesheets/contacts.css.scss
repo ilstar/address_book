@@ -75,7 +75,7 @@ html {
 .contact {
   display: inline-block;
   -webkit-border-radius: 43px;
-  -webkit-box-shadow: 0 0 10px 4px rgba(255,255,255,0.3);;
+  -webkit-box-shadow: 0 0 10px 4px rgba(255,255,255,0.3);
   width: 86px;
   height: 86px;
   -webkit-background-size: cover;
@@ -92,11 +92,46 @@ span.name {
   display: none;
 }
 
-div.popup {
-  position: fixed;
-  margin: auto auto;
-  top: 25px;
-  width:250px;
-  min-height:250px;
-  padding-bottom: 10px;
+.popup {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent url(/assets/popup_background.png) center top no-repeat;
+  background-size: 320px 480px;
+  margin: 0;
+
+  .avatar {
+    width: 108px;
+    height: 108px;
+    background: transparent left top no-repeat;
+    background-size: 108px 108px;
+    -webkit-border-radius: 54px;
+    margin: 75px auto 0 auto;
+
+    img {
+      display: none;
+    }
+  }
+
+  .caption {
+    width: 320px;
+    margin: 40px auto;
+    color: white;
+
+    .user-name {
+      font-family: Georgia;
+      text-align: center;
+      font-size: 28px;
+      font-weight: normal;
+    }
+
+    .user-description {
+      font-family: verdana;
+      text-align: center;
+      font-size: 12px;
+      margin-top: 15px;
+    }
+  }
 }

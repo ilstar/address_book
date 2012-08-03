@@ -1,4 +1,5 @@
 updateContactInfo = (contact) ->
+  $("#myModal .avatar").attr 'style', "background-image: url(#{contact.data('avatar')});"
   $("#modal-name").text contact.data('name')
   $("#modal-avatar").attr 'src', contact.data('avatar')
   $("#modal-desc").text contact.data('desc')
@@ -16,12 +17,12 @@ initialize = ($)->
   # $body.on 'hold', '.contact', (e) ->
   #   $('#myModal').modal('show')
 
-  $('span.contact').on 'click', ->
+  $('.contact').on 'click', ->
     location.href = "tel:+#{$(this).data 'phone'}"
 
-  $('span.contact').on 'hold', ->
+  $('.contact').on 'hold', ->
     updateContactInfo $(this)
-    $('#myModal').modal('show')
+    $('#myModal').show()
 
   unveil = ->
     console.log "unveil"
