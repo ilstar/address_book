@@ -1,4 +1,7 @@
-# jQuery ->
-#   $("a[rel=popover]").popover()
-#   $(".tooltip").tooltip()
-#   $("a[rel=tooltip]").tooltip()
+jQuery ->
+
+  $('.contact').on 'tap', ()->
+    alert '4234'
+
+  $('.contact').on 'hold', ()->
+    alert 'hold'
