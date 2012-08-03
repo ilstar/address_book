@@ -32,4 +32,5 @@ initialize = ($)->
 
   MBP.hideUrlBar();
 
-initialize(jQuery)
+addEventListener 'DOMContentLoaded', ->
+  initialize(jQuery)
