@@ -97,18 +97,18 @@ span.name {
   top: 44px;
   left: 0;
   right: 0;
-  bottom: 0;
-  background: transparent url(/assets/popup_background.png) center top no-repeat;
+  height: 640px;
+  background: transparent url(/assets/popup_background.png) center top repeat-y;
   background-size: 320px 480px;
   margin: 0;
 
   .avatar {
-    width: 108px;
-    height: 108px;
+    width: 150px;
+    height: 150px;
     background: transparent left top no-repeat;
-    background-size: 108px 108px;
-    -webkit-border-radius: 54px;
-    margin: 75px auto 0 auto;
+    background-size: 150px 150px;
+    -webkit-border-radius: 75px;
+    margin: 60px auto 0 auto;
 
     img {
       display: none;
@@ -134,4 +134,49 @@ span.name {
       margin-top: 15px;
     }
   }
+
+  .actions {
+    position: relative;
+    margin-top: 60px;
+
+    a {
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 80px;
+      height: 40px;
+      background: transparent left center no-repeat;
+      background-size: 40px 40px;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .fav {
+      left: 30px;
+      background-image: url(/assets/fav.png);
+    }
+    .call {
+      left: 138px;
+      background-image: url(/assets/call.png);
+    }
+    .message {
+      left: 245px;
+      top: 3px;
+      background-image: url(/assets/message.png);
+    }
+  }
+
+  .return {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 40px;
+      height: 40px;
+      background: transparent url(/assets/return.png) left center no-repeat;
+      background-size: 40px 40px;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+    }
 }

@@ -22,7 +22,12 @@ initialize = ($)->
 
   $('.contact').on 'hold', ->
     updateContactInfo $(this)
+    $('body').css 'overflow', 'hidden'
     $('#myModal').show()
+
+  $('#myModal .return').on 'click', ->
+    $('body').css 'overflow', ''
+    $('#myModal').hide()    
 
   unveil = ->
     console.log "unveil"
